@@ -1,9 +1,7 @@
-
-import './App.css';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import Header from './components/header/Header';
+import AOS from 'aos';
+
 
 function App() {
   useEffect(() => {
@@ -12,8 +10,7 @@ function App() {
   }, []);
 
   return (
-    <div >
-      <h1>Mi nuevo proyecto</h1>
+    <div className="">
       <Header />
     </div>
   );
