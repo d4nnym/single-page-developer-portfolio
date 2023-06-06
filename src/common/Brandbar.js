@@ -14,7 +14,7 @@ export default function Brandbar() {
   return (
     <>
       <div className="column is-flex-mobile is-justify-content-center-mobile">
-        <span className="brand">adamkeyes</span>
+        <span className="brand line-height">adamkeyes</span>
       </div>
       <div className="column is-flex is-justify-content-flex-end is-justify-content-center-mobile">
         <ul className="is-flex is-align-items-center">{websiteList}</ul>

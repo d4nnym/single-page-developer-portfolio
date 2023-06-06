@@ -7,7 +7,20 @@
   
 body
   color: $white
-
+  font-size: $normal-text
+  line-height: 158%
+  font-weight: $weight-normal
+h1
+  font-size: $text-xl
+  font-style: normal
+  font-weight: 700
+  letter-spacing: -2.5px
+  line-height: 100%   
+  
+.underlined-text
+  border-bottom: 6px solid $turquoise
+.container-60
+  width: 60% 
 .body
   margin: 0 auto !important
   max-width: 1180px
@@ -17,7 +30,16 @@ body
   font-size: $size-3
   font-weight: weight-bold
   letter-spacing: -0.44px
+  line-height: 100%  
 
+.img-profile
+  display: inline-block
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  position: absolute
+  top: 0 !important
+  z-index: -1  
 /**************************** 
       mixins custom  
   ****************************/
@@ -31,27 +53,30 @@ body
   .websites
     max-height: 20px
 
-.img-profile
-  display: inline-block
-  background-repeat: no-repeat
-  background-position: center
-  background-size: cover
-  position: absolute
-  top: 0
-  z-index: -1
+  .img-profile
+    background-image: url("../assets/images/image-profile-mobile.webp")!important
+    width: 174px !important
+    height: 383px !important
 
 @include tablet
   .img-profile
     background-image: url("../assets/images/image-profile-tablet.webp")!important
     width: 322px !important
-    height: 600px !important
+    height: 600px !important 
+  h1
+    font-size: 72px
+    letter-spacing: -2.05px
 
 @include fullhd
+  .profile-width
+    height: 650px !important
   .img-profile
-    background-image: url("../assets/images/image-profile-desktop.webp")
     width: 445px !important
     height: 720px !important
+    background-image: url("../assets/images/image-profile-desktop.webp")
     
+      
+      
 
 /**************************** 
       main

@@ -14,6 +14,7 @@ function App() {
     <div className="body">
       <Header />
       <Main />
+      {/* Footer*/}
     </div>
   );
 }
