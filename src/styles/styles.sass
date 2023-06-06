@@ -5,20 +5,53 @@
 :root
   background: $dark
   
-
 body
-  padding: 0 10rem 0 10rem
-  color: hsl(0,0%,100% ) 
+  color: $white
+
+.body
+  margin: 0 auto !important
+  max-width: 1180px
+  padding: 0 $size-3
 
 .brand
-  font-size: 2rem
-  font-weight: 700
+  font-size: $size-3
+  font-weight: weight-bold
   letter-spacing: -0.44px
 
-
 /**************************** 
-      header
+      mixins custom  
   ****************************/
+@include mobile
+  .body
+    padding: 0 $size-6
+  .is-justify-content-center-mobile
+    justify-content: center !important
+  .brand
+    font-size: $size-4
+  .websites
+    max-height: 20px
+
+.img-profile
+  display: inline-block
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  position: absolute
+  top: 0
+  z-index: -1
+
+@include tablet
+  .img-profile
+    background-image: url("../assets/images/image-profile-tablet.webp")!important
+    width: 322px !important
+    height: 600px !important
+
+@include fullhd
+  .img-profile
+    background-image: url("../assets/images/image-profile-desktop.webp")
+    width: 445px !important
+    height: 720px !important
+    
 
 /**************************** 
       main
