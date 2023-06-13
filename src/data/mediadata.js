@@ -1,31 +1,31 @@
-import svgGithub from '../assets/images/icon-github.svg';
-import svgLinkedin from '../assets/images/icon-linkedin.svg';
-import svgTwitter from '../assets/images/icon-twitter.svg';
-import svgFrontendMentor from '../assets/images/icon-frontend-mentor.svg';
+import { ReactComponent as SvgGithub } from '../assets/images/icon-github.svg';
+import {ReactComponent as SvgLinkedin} from '../assets/images/icon-linkedin.svg';
+import {ReactComponent as SvgTwitter }from '../assets/images/icon-twitter.svg';
+import {ReactComponent as SvgFrontendMentor} from '../assets/images/icon-frontend-mentor.svg';
 import imgProfileDesktop from '../assets/images/image-profile-desktop.webp';
 
 export const websites = [
   {
     name:"github",
-    src:svgGithub,
+    SvgComponent:SvgGithub,
     title:"to Adam's Github",
     href:"#"
   }, 
   {
     name:"linkedin",
-    src:svgLinkedin,
+    SvgComponent:SvgLinkedin,
     title:"to Adam's Linkedin",
     href:"#"
   },
   {
     name:"twitter",
-    src:svgTwitter,
+    SvgComponent:SvgTwitter,
     title:"to Adam's Twitter",
     href:"#"
   },
   {
     name:"frontendMentor",
-    src:svgFrontendMentor,
+    SvgComponent:SvgFrontendMentor,
     title:"to Adam's Frontend Mentor",
     href:"#"
   }

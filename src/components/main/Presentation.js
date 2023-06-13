@@ -1,3 +1,5 @@
+import Button from "../../common/Button.js"; 
+
 export default function Presentation() {
   return (
     <>
@@ -23,15 +25,13 @@ export default function Presentation() {
                   building accessible web apps that users love.
                 </p>
               </div>
-
               <div className="mt-7 has-text-centered-mobile">
-                <button type="button" className="button-primary">Contact Me</button>
+                <Button type="anchor" content="Contact Me" href="/#" />
               </div>
             </div>
           </div>
           <div className="column order-0 container-profile is-flex is-justify-content-flex-end is-justify-content-center-mobile "></div>
         </div>
-        <div className=""></div>
       </section>
     </>
   );

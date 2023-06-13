@@ -1,15 +1,16 @@
 import { websites } from "../data/mediadata";
 
 export default function Brandbar() {
+  
   const websiteList = websites.map((website) => {
     return (
       <li key={website.name} className="website">
         <a href="/#">
-          <img src={website.src} alt=" " className="websites"/>
+          <website.SvgComponent className="svg-component"/>
         </a>
       </li>
     );
-  });
+  })
 
   return (
     <>
