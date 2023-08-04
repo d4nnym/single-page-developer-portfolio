@@ -1,12 +1,21 @@
-import Button from "../../common/Button.js"; 
+import Button from "../../common/Button.js";
+import { svgPatternCircle } from "../../data/mediadata";
+import { svgPatternRing } from "../../data/mediadata";
 
 export default function Presentation() {
   return (
     <>
       <section id="presentation">
+        <div className="pattern-ring-1">
+          <svgPatternRing.SvgComponent />
+        </div>
+
         <div className="is-flex is-justify-content-flex-end is-justify-content-center-mobile">
           <div className="img-profile">
             <span></span>
+            <div className="pattern-circle">
+              <svgPatternCircle.SvgComponent />
+            </div>
           </div>
         </div>
         <div className="columns is-flex-mobile is-flex-direction-column-mobile">

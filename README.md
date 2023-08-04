@@ -1,25 +1,27 @@
-# Frontend Mentor: solución de cartera para desarrolladores de una sola página
+# Frontend Mentor: Solución de Single-page developer portfolio
 
-Esta es una solución al [desafío de la cartera de desarrolladores de una sola página en Frontend Mentor](https://www.frontendmentor.io/challenges/singlepage-developer-portfolio-bBVj2ZPi-x). Los desafíos de Frontend Mentor lo ayudan a mejorar sus habilidades de codificación mediante la creación de proyectos realistas.
+Esta es mi solución a [Single-page developer portfolio en Frontend Mentor](https://www.frontendmentor.io/challenges/singlepage-developer-portfolio-bBVj2ZPi-x). Los desafíos de Frontend Mentor lo ayudan a mejorar sus habilidades de codificación mediante la creación de proyectos realistas.
 
 ## Tabla de contenido
 
-- [Frontend Mentor: solución de cartera para desarrolladores de una sola página](#frontend-mentor-solución-de-cartera-para-desarrolladores-de-una-sola-página)
+- [Frontend Mentor: Solución de Single-page developer portfolio](#frontend-mentor-solución-de-single-page-developer-portfolio)
   - [Tabla de contenido](#tabla-de-contenido)
   - [Descripción general](#descripción-general)
     - [El reto](#el-reto)
     - [Captura de pantalla](#captura-de-pantalla)
     - [Enlaces](#enlaces)
   - [Mi proceso](#mi-proceso)
-    - [Construido con](#construido-con)
+    - [Herramientas](#herramientas)
     - [Que aprendí](#que-aprendí)
       - [Archivos SVG como componentes React](#archivos-svg-como-componentes-react)
+        - [_demostración del código_](#demostración-del-código)
+      - [Renderizar elementos en bucles anidados](#renderizar-elementos-en-bucles-anidados)
+        - [_demostración del código_](#demostración-del-código-1)
     - [Desarrollo continuo](#desarrollo-continuo)
+      - [En qué mejorar](#en-qué-mejorar)
+      - [Metas futuras](#metas-futuras)
     - [Recursos útiles](#recursos-útiles)
   - [Autor](#autor)
-  - [Agradecimientos](#agradecimientos)
-
-**Nota: elimine esta nota y actualice la tabla de contenido según las secciones que conserve.**
 
 ## Descripción general
 
@@ -28,63 +30,73 @@ Esta es una solución al [desafío de la cartera de desarrolladores de una sola 
 Los usuarios deben ser capaces de:
 
 - Recibir un mensaje de error cuando se envía el `formulario` si:
-   - Cualquier campo está vacío
-   - La dirección de correo electrónico no tiene el formato correcto
-- Ver el diseño óptimo para la interfaz según el tamaño de pantalla de su dispositivo
-- Vea los estados de desplazamiento y enfoque para todos los elementos interactivos en la página
-- **Bonificación**: Conecta el formulario para que envíe y almacene la consulta del usuario (puedes usar una hoja de cálculo o Airtable para guardar las consultas)
-- **Bonificación**: agregue sus propios detalles (imagen, habilidades, proyectos) para reemplazar los del diseño
+   - Cualquier campo está vacío ✅
+   - La dirección de correo electrónico no tiene el formato correcto ✅
+- Ver el diseño óptimo para la interfaz según el tamaño de pantalla de su dispositivo ✅
+- Vea los estados de desplazamiento y enfoque para todos los elementos interactivos en la página ✅
+- **Bonificación**: Conecta el formulario para que envíe y almacene la consulta del usuario (puedes usar una hoja de cálculo o Airtable para guardar las consultas) ❌
+- **Bonificación**: agregue sus propios detalles (imagen, habilidades, proyectos) para reemplazar los del diseño ✅
 
 ### Captura de pantalla
 
-![](./captura de pantalla.jpg)
+![Solución de Single-page developer portfolio](./public/media/screenshot_singlepage-developer-portfolio.webp)
 
-Agregue una captura de pantalla de su solución. La forma más fácil de hacer esto es usar Firefox para ver su proyecto, hacer clic derecho en la página y seleccionar "Tomar una captura de pantalla". Puede elegir una captura de pantalla de altura completa o una recortada según la longitud de la página. Si es muy largo, sería mejor recortarlo.
-
-Alternativamente, puede usar una herramienta como [FireShot](https://getfireshot.com/) para tomar la captura de pantalla. FireShot tiene una opción gratuita, por lo que no es necesario que la compre.
-
-Luego recorta/optimiza/edita tu imagen como quieras, agrégala a tu proyecto y actualiza la ruta del archivo en la imagen de arriba.
-
-**Nota: elimine esta nota y los párrafos anteriores cuando agregue su captura de pantalla. Si prefiere no agregar una captura de pantalla, no dude en eliminar toda esta sección.**
 
 ### Enlaces
 
-- URL de la solución: [Agregue la URL de la solución aquí] (https://your-solution-url.com)
-- URL del sitio en vivo: [Agregue la URL del sitio en vivo aquí] (https://your-live-site-url.com)
+- Github Repository: [Reposiroty](https://github.com/d4nnym/single-page-developer-portfolio)
+- Github Page: [Single Page Developer Portfolio](https://d4nnym.github.io/single-page-developer-portfolio)
 
 ## Mi proceso
 
-### Construido con
+### Herramientas
 
-- Marcado HTML5 semántico
-- Propiedades personalizadas de CSS
-- Caja flexible
-- Cuadrícula CSS
-- Flujo de trabajo móvil primero
-- [Reaccionar](https://reactjs.org/) - Biblioteca JS
-- [Next.js](https://nextjs.org/) - Marco de reacción
-- [Componentes con estilo](https://styled-components.com/) - Para estilos
-
-**Nota: Estos son solo ejemplos. Elimine esta nota y reemplace la lista anterior con sus propias elecciones**
+- [React](https://es.react.dev/) ![react logo](./public/media/react_logo.png)
+- [SASS](https://sass-lang.com/) ![sass logo](./public/media/sass_logo.png)
+- [Bulma](https://bulma.io/) ![bulma logo](./public/media/bulma_logo.png)
+- [AOS (Library)](https://michalsnik.github.io/aos/) 
 
 ### Que aprendí
 
 #### Archivos SVG como componentes React
 
-**¿Por qué utilizar archivos SVG como componentes de React?**
-
-El reto me daba 4 archivos diferentes de SVG que eran parte de la navegación para los sitios web. Estos al momento de pasar sobre ellos (hover) tenían un cambio de aspecto. Es por ellos, que en lugar de utilizar la etiqueta <img> para mostrarlos, decidí convertirlos en componentes de React y luego importarlos en otro componente. Esto me permitió estilizar cada uno de los archivos SVG. 
-
-**Json para controlar los datos**
-
-El nombre del archivo es mediadata.js, este se encarga de controlar las direcciones de los archivos multimedia (assets). 
+React nos ofrece la posibilidad de utilizar archivos SVG como componentes. Esto nos permite estilizarlos y utilizarlos como cualquier otro componente, cargando toda sus propiedades para explotarlas al máximo. 
 
 ```js
-// ver en: src/data/mediadata.js
-import { ReactComponent as SvgGithub } from '../assets/images/icon-github.svg'
+import {ReactComponent as SvgName} from '../url/file.svg';
+
+export default function Component(){
+  return(
+    <SvgName />
+  )
+}
+
 ```
 
-Luego exporto cada activo (archivo svg) con sus atributos: nombre, componente, título y su dirección. 
+Esto da solución al tener que utilizar largos y extensos códigos XML para mostrar un archivo SVG.
+
+```html
+<svg height="25px" width="25px" xmlns="http://www.w3.org/2000/svg" class="svg-component"><path fill="#FFF" fill-rule="evenodd" d="M12.304 0C5.506 0 0 5.506 0 12.304c0 5.444 3.522 10.042 8.413 11.672.615.108.845-.261.845-.584 0-.292-.015-1.261-.015-2.291-3.091.569-3.891-.754-4.137-1.446-.138-.354-.738-1.446-1.261-1.738-.43-.23-1.046-.8-.016-.815.97-.015 1.661.892 1.892 1.261 1.107 1.86 2.876 1.338 3.584 1.015.107-.8.43-1.338.784-1.646-2.738-.307-5.598-1.368-5.598-6.074 0-1.338.477-2.446 1.26-3.307-.122-.308-.553-1.569.124-3.26 0 0 1.03-.323 3.383 1.26.985-.276 2.03-.415 3.076-.415 1.046 0 2.092.139 3.076.416 2.353-1.6 3.384-1.261 3.384-1.261.676 1.691.246 2.952.123 3.26.784.861 1.26 1.953 1.26 3.307 0 4.721-2.875 5.767-5.613 6.074.446.385.83 1.123.83 2.277 0 1.645-.015 2.968-.015 3.383 0 .323.231.708.846.584a12.324 12.324 0 0 0 8.382-11.672C24.607 5.506 19.101 0 12.304 0Z"></path></svg>
+```
+
+**¿Por qué utilizar archivos SVG como componentes de React?**
+
+En esta parte del reto, queremos darle vida e interactividad a las diferentes redes sociales en la barra de navegación. Utilizar la etiqueta ```<img src="file.svg"/>``` no nos permite explorar las propiedades de los archivos SVG. Una forma es utilizar ```<svg></svg>```, sin embargo, el código se vuelve extenso y difícil de leer.
+
+![Demostración navegación interactiva ](./public/media/single-page-developer-portfolio.gif)
+
+##### _demostración del código_
+
+**Json para controlar los datos.** Se cargan los archivos y les asiganamos un alias. 
+
+```jsx
+// ver en: src/data/mediadata.js
+import { ReactComponent as SvgGithub } from '../assets/images/icon-github.svg';
+import {ReactComponent as SvgLinkedin} from '../assets/images/icon-linkedin.svg';
+import {ReactComponent as SvgTwitter }from '../assets/images/icon-twitter.svg';
+```
+
+Luego exporto cada archivo svg con información extra: nombre, _componente_, título y su dirección(este ultimo caso es para los anchors ```<a href=""/>```). SvgComponent es el atributo que se encarga de almacenar el contenido del archivo SVG. 
   
 ```js
 // ver en: src/data/mediadata.js
@@ -93,58 +105,108 @@ export const websites = [
     name:"github",
     SvgComponent:SvgGithub,
     title:"to Adam's Github",
-    href:"/#"
-  }]
+    href:"#"
+  }, 
+  {
+    name:"linkedin",
+    SvgComponent:SvgLinkedin,
+    title:"to Adam's Linkedin",
+    href:"#"
+  },
+  {
+    name:"twitter",
+    SvgComponent:SvgTwitter,
+    title:"to Adam's Twitter",
+    href:"#"
+  },
+  {
+    name:"frontendMentor",
+    SvgComponent:SvgFrontendMentor,
+    title:"to Adam's Frontend Mentor",
+    href:"#"
+  }
+
+]
  ```
 
- Por último utilizo este componente en donde lo requiero. Para este caso, se utiliza en dos secciones diferentes: header y footer. Para hacer uso de estos datos, importo el arreglo **websites** y hago uso de los datos que requiera. 
+ Por último utilizo los componentes SVG en el lugarrequerido. 
 
 ```js
 // ver en: src/common/Brandbar.js
-import { websites } from "../data/mediadata";
+import { websites } from "../data/mediadata"; // 
 
-//Expresión general [ejemplo]
-<a href={websites[i].href}>
-  <websites[i].SvgComponent className="custom-svg"/>
-</a>
+function Component(){
+  const websiteList = websites.map((website) => {
+    return (
+      <li key={website.name} className="website">
+        <a href="/#">
+          <website.SvgComponent className="svg-component"/>
+        </a>
+      </li>);
+  })
 
-// Código real
-websites.map((website) => {
-  return (
-    <li key={website.name} className="website">
-      <a href="/#">
-        <website.SvgComponent className="svg-component"/>
-      </a>
-    </li>
-  );
-})
+  return(<ul className="is-flex is-align-items-center">{websiteList}</ul>);
+}
+```
 
-return(<ul className="is-flex is-align-items-center">{websiteList}</ul>)
+####  Renderizar elementos en bucles anidados   
+
+**Fragments** fue mi solución. React utiliza la sintaxis ```<></>``` para agrupar multiples elementos. Sin embargo, al momento de renderizar un lista de elementos, es necesario utilizar la prop **key={id}**. La solución es utilizar  el componente de react ```<Fragment></Fragment>```. 
+
+##### _demostración del código_
+
+```jsx
+// ver en: src/components/main/Projects.js
+import {Fragment} from 'react';
+
+export default ...
+  const projects = projectImages.map((project) => {
+      const tools = project.tools.map((tool, j) => {
+        return (
+          <span key={tool + j} className="pr-2 is-uppercase">
+            {tool}
+          </span>
+        );
+      });
+
+      return(
+        <Fragment key={project.id}>
+          {tools}
+        </Fragment > 
+      )})
+
 ```
 
 ### Desarrollo continuo
 
-Use esta sección para delinear las áreas en las que desea continuar enfocándose en proyectos futuros. Estos podrían ser conceptos con los que todavía no te sientes completamente cómodo o técnicas que te resultaron útiles y que deseas refinar y perfeccionar.
+Terminar un proyecto es muy satisfactorio y emocionante. Sin embargo, siempre hay algo que mejorar. 
 
-**Nota: elimine esta nota y el contenido de esta sección y reemplácelos con sus propios planes para un desarrollo continuo.**
+#### En qué mejorar
+- Clean code y la organización de los archivos. 
+- Optimización de código **SASS** 
+- Mejorar la independencia de los componentes
+
+#### Metas futuras 
+
+- Ampliar conocimientos en HTML y SASS
+- Mejorar animación 
+- Funcionalidad de cambio de temas 
 
 ### Recursos útiles
 
-- [Recurso de ejemplo 1](https://www.example.com) - Esto me ayudó por motivos XYZ. Me gustó mucho este patrón y lo usaré en el futuro.
-- [Recurso de ejemplo 2](https://www.example.com) - Este es un artículo increíble que finalmente me ayudó a comprender XYZ. Se lo recomendaría a cualquiera que aún esté aprendiendo este concepto.
+**Recursos que siempre mantengo a mano**
 
-**Nota: Elimina esta nota y reemplaza la lista anterior con recursos que te ayudaron durante el desafío. Estos podrían ser útiles para cualquier persona que vea su solución o para usted mismo cuando mire hacia atrás en este proyecto en el futuro.**
+- [HTML y CSS](https://marksheet.io/) - Cuando requiero de algo, rápidamente puedo encontrarlo. 
+- [FlexBox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - Esto nunca puede faltar XD
+- [Bootstrap](https://getbootstrap.com/) - Si bien no lo utilizo en mis proyectos. Lo recomiendo para aprender a cómo crear tus propios componente. Por ejemplo un modal o un barra de navegación. Bootstrap tiene una documentación muy completa y fácil de entender. 
 
 ## Autor
 
-- Sitio web - [Agregue su nombre aquí] (https://www.your-site.com)
-- Mentor de frontend - [@tunombredeusuario](https://www.frontendmentor.io/profile/tunombredeusuario)
-- Twitter - [@tunombredeusuario](https://www.twitter.com/tunombredeusuario)
+- Mentor de frontend — [@d4nnym](https://www.frontendmentor.io/profile/d4nnym)
+- Twitter — [@dannymatute_](https://twitter.com/dannymatute_)
 
-**Nota: elimine esta nota y agregue/elimine/edite las líneas anteriores según los enlaces que le gustaría compartir.**
-
-## Agradecimientos
-
-Aquí es donde puedes dar una propina a cualquier persona que te haya ayudado en este proyecto. Quizás trabajó en un equipo o se inspiró en la solución de otra persona. Este es el lugar perfecto para darles algo de crédito.
-
-**Nota: elimine esta nota y edite el contenido de esta sección según sea necesario. Si completaste este desafío por tu cuenta, no dudes en eliminar esta sección por completo.**
+<style>
+  img{
+   border-radius: 8px;
+  }
+</style>
