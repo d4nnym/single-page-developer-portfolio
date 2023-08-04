@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/single-page-developer-portfolio/static/css/main.360e726c.css",
+    "main.js": "/single-page-developer-portfolio/static/js/main.cf50c8e1.js",
+    "static/media/SpaceGrotesk-VariableFont_wght.ttf": "/single-page-developer-portfolio/static/media/SpaceGrotesk-VariableFont_wght.1036357b9651eff7d3dd.ttf",
+    "static/media/thumbnail-project-4-large.webp": "/single-page-developer-portfolio/static/media/thumbnail-project-4-large.751a4aca20e0604e0904.webp",
+    "static/media/thumbnail-project-6-large.webp": "/single-page-developer-portfolio/static/media/thumbnail-project-6-large.1bb664dcc9883bc285db.webp",
+    "static/media/image-profile-desktop.webp": "/single-page-developer-portfolio/static/media/image-profile-desktop.40dab61f7ce1c269d011.webp",
+    "static/media/thumbnail-project-4-small.webp": "/single-page-developer-portfolio/static/media/thumbnail-project-4-small.9b78cb7a8fc016ac6f3e.webp",
+    "static/media/thumbnail-project-1-large.webp": "/single-page-developer-portfolio/static/media/thumbnail-project-1-large.a3cdd4320a0ecdd0855f.webp",
+    "static/media/thumbnail-project-2-large.webp": "/single-page-developer-portfolio/static/media/thumbnail-project-2-large.e06e1b03f76ad1010133.webp",
+    "static/media/thumbnail-project-6-small.webp": "/single-page-developer-portfolio/static/media/thumbnail-project-6-small.6c5f5966e1c2eba5e0af.webp",
+    "static/media/image-profile-tablet.webp": "/single-page-developer-portfolio/static/media/image-profile-tablet.314e256446dd62c124eb.webp",
+    "static/media/thumbnail-project-1-small.webp": "/single-page-developer-portfolio/static/media/thumbnail-project-1-small.49e25903f70dda5c2a93.webp",
+    "static/media/image-profile-mobile.webp": "/single-page-developer-portfolio/static/media/image-profile-mobile.a8f8432077fd643bed7b.webp",
+    "static/media/thumbnail-project-2-small.webp": "/single-page-developer-portfolio/static/media/thumbnail-project-2-small.f36a7e52b84a6d8c7461.webp",
+    "static/media/thumbnail-project-3-large.webp": "/single-page-developer-portfolio/static/media/thumbnail-project-3-large.204666234bbd998df57f.webp",
+    "static/media/thumbnail-project-5-large.webp": "/single-page-developer-portfolio/static/media/thumbnail-project-5-large.bc869bfce11bf4174bdd.webp",
+    "static/media/thumbnail-project-3-small.webp": "/single-page-developer-portfolio/static/media/thumbnail-project-3-small.951fb216eb344873b374.webp",
+    "static/media/thumbnail-project-5-small.webp": "/single-page-developer-portfolio/static/media/thumbnail-project-5-small.e186a34a955415f41ecd.webp",
+    "static/media/icon-github.svg": "/single-page-developer-portfolio/static/media/icon-github.ce7e17122c5fcbb3a7a5cd1838f95a19.svg",
+    "index.html": "/single-page-developer-portfolio/index.html",
+    "static/media/icon-frontend-mentor.svg": "/single-page-developer-portfolio/static/media/icon-frontend-mentor.82dfa2a330614ef1e11e53c0982b6de8.svg",
+    "static/media/icon-twitter.svg": "/single-page-developer-portfolio/static/media/icon-twitter.d5e87537b030dde87f74fe19a0b3f16d.svg",
+    "static/media/icon-linkedin.svg": "/single-page-developer-portfolio/static/media/icon-linkedin.3f0f2bf36bc4ffbf8f25155eb2848099.svg",
+    "static/media/pattern-rings.svg": "/single-page-developer-portfolio/static/media/pattern-rings.e62a24d55bee668faa1f245882fad1b7.svg",
+    "static/media/warning.svg": "/single-page-developer-portfolio/static/media/warning.bd27d1fd724c589b9d4b.svg",
+    "static/media/pattern-circle.svg": "/single-page-developer-portfolio/static/media/pattern-circle.0e9ea7e2d6255d388d672d05bb9cfb04.svg",
+    "main.360e726c.css.map": "/single-page-developer-portfolio/static/css/main.360e726c.css.map",
+    "main.cf50c8e1.js.map": "/single-page-developer-portfolio/static/js/main.cf50c8e1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.360e726c.css",
+    "static/js/main.cf50c8e1.js"
+  ]
+}
