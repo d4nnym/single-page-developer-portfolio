@@ -204,9 +204,3 @@ Terminar un proyecto es muy satisfactorio y emocionante. Sin embargo, siempre ha
 
 - Mentor de frontend — [@d4nnym](https://www.frontendmentor.io/profile/d4nnym)
 - Twitter — [@dannymatute_](https://twitter.com/dannymatute_)
-
-<style>
-  img{
-   border-radius: 8px;
-  }
-</style>
